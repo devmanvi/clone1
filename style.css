@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+       --bg-grey: rgb (232,232,232);
+       --font-primary:('lato',sans-serif);
+       --font-weight-thick:700;
+       --font-weight-thin:300;
+
+}
+body{
+    height: 100vh;
+    background-color: var(--bg-grey);
+    font-family: var(--font-primary);
+}
+.logo{
+    color: black;
+}
