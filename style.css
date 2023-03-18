@@ -4,17 +4,19 @@
 }
 
 :root{
-       --bg-grey: rgb (232,232,232);
-       --font-primary:('lato',sans-serif);
-       --font-weight-thick:700;
-       --font-weight-thin:300;
+    --bg-primary:grey;
+    --color-primary:black;
+    --font-primary:'Lato', sans-serif;
+    --font-thick:700;
+    --font-thin:300;
+}
 
-}
 body{
-    height: 100vh;
-    background-color: var(--bg-grey);
     font-family: var(--font-primary);
+    color: var(--color-primary);
+    height: 100vh;
 }
+
 .logo{
     color: black;
 }
