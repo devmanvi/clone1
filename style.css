@@ -89,9 +89,114 @@ body{
     z-index: -8; 
 }
 
+
 .navbar li>a:hover::after{
     /* text-decoration: azure; */
     /* color: aliceblue; */
     /* z-index: 8; */
 }
 
+.nav-mobile{
+    display: none;
+}
+
+.mini{
+    display: none;
+}
+
+@media(max-width:500px){
+
+    .mini{
+        background-color: black;
+        width: 100vh;
+        display:block;
+        
+    }
+
+    .nav-mobile{
+        display: flex;
+        flex: 1;
+        /* width: 10px; */
+        gap: 30px;
+        opacity: 0;
+        background-color: black;
+        
+    
+    }
+
+    .logo{
+        display: none;
+    }
+    
+    .navbar{
+        display: none;
+    }
+
+    .nav2-mobile{
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+        margin-top: 100px;
+        background-color: black;
+        opacity: 0;
+        
+    }
+
+    .nav2-li{
+        margin-bottom: 100px;
+    }
+
+    .nav2-li>a{
+        color: white;
+        font-size: 30px;
+        text-decoration: none;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    #nav{
+       display: none;
+       position: absolute;
+    }
+
+    label::before{
+        content: "=";
+        font-size: 50px;
+        color: white;
+        font-weight: bold;
+        position: absolute;
+        right: 0;
+        cursor: pointer;
+
+    }
+
+    #nav:checked ~ label:before{
+        content: "\292B";
+        color: white;
+        font-size: 50px;
+        position: absolute;
+    }
+
+    #nav:checked ~ .nav2-mobile{
+        opacity: 1;
+    }    
+
+    #nav:checked ~ .nav-mobile{
+        opacity: 1;
+    }   
+    
+    #navli-1{
+        background-color: rgb(255, 0, 0);
+        height: 150px;
+    }
+
+    #navli-1>a{
+        color: black;
+        font-weight: bold;
+        font-size: 100px;
+        animation:slideOutRight; 
+        animation-duration: 2s;
+    }
+}
