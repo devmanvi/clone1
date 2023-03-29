@@ -4,7 +4,7 @@
 }
 
 :root{
-    --bg-primary:grey;
+    --bg-primary:white;
     --color-primary:black;
     --font-primary:'Lato', sans-serif;
     --font-thick:700;
@@ -196,7 +196,43 @@ body{
         color: black;
         font-weight: bold;
         font-size: 100px;
-        animation:slideOutRight; 
-        animation-duration: 2s;
+        animation: 2s linear 1s infinite running slidein;
     }
+    
+
+    @keyframes slidein {
+        from {
+          margin-left: 0;
+          /* width: 300%; */
+        }
+      
+        to {
+          margin-left: 100%;
+          /* width: 100%; */
+        }
+      }
+
+
 }
+.mn-text{
+    font-weight: bold;
+    font-size: 80px;
+    text-align: center;
+    height: 200px;
+    margin-top: 50px;
+    
+  }
+
+  .mn-text2{
+    margin-top: 45px;
+    color: orange;
+    margin-right: 20px;
+    margin-left: 40px;
+    font-size: 15px;
+  }
+
+  .mn-text3{
+    margin-left:30%;
+    margin-top: 30px;
+
+  }
